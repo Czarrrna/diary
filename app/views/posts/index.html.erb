@@ -1,0 +1,4 @@
+<% @posts.each do |post| %>
+<h2><%= link_to post.title , post %></h2>
+<% end %>
+<%= link_to 'Utworz wpis' , new_post_path %>

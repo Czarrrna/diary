@@ -1,0 +1,8 @@
+<%= form_for(Post.new) do |form| %>
+<p><%= form.label("title") %></p>
+  <p><%= form.text_field("title") %></p>
+<p><%= form.label("content") %></p>
+  <p><%= form.text_area("content") %></p>
+  <p><%= form.submit %></p>
+<% end %>
+<p><%= link_to("Wróc", posts_path) %></p>
